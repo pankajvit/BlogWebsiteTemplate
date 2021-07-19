@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    padding: 0 15%;
+}
+.logo {
+    display: inline;
+}
+.logo img {
+    width: 12vw;
+    height: 18vh;
+    float: left;
+    padding-right: 3rem;
+    
+}
+.left {
+    float: left;
+    width: 68%;
+}
+.logo ul {
+    display: inline;
+}
+.logo ul li {
+    list-style: none;
+    float: left;
+    line-height: 20vh;
+    padding: 0rem 1.5rem;
+}
+.right {
+    float: right;
+    width: 32%;
+    line-height: 20vh;
+}
+.right input[type="text"] {
+    border: 2px solid black;
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 0.7rem;
+    font-size: 1rem;
+}
+.right .btn {
+    padding: 0.8rem;
+    border: 2px solid black;
+    border-radius: 0.7rem;
+    font-size: 1rem;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+nav ul li:hover {
+    font-weight: 900;
+    color: brown;
+}
+hr {
+    width: 70%;
+    margin: 2rem auto;
+
+}
+.heading {
+    width: 70%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+.heading .contentLeft {
+    float: left;
+    width: 70%;
+}
+.contentLeft h1 {
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+}
+.contentLeft p {
+    line-height: 2rem;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+.contentRight{
+    width: 30%;
+    float: right;
+}
+.contentRight img {
+    /* min-width: 10vw; */
+    /* min-height: 10vh; */
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.blogpostSection {
+    padding: 20px;
+    margin: 10px auto;   
+    width: 80%;
+    height: auto;
+    background-color: #FBF7F7;
+}
+.blogpostSection h2 {
+    font-size: 2em;
+    margin: 1.5rem 0rem;
+    font-family: 'Roboto', sans-serif;
+}
+.post {
+    display: flex;
+    margin: 1.5rem 0rem;
+}
+.postImage img {
+    width: 300px;
+    height: 200px;
+}
+.postTitle {
+    padding-top: 50px;
+    padding-left: 20px;
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+.postTitle a {
+    text-decoration: none;
+    color: black;
+}
+footer {
+    width: 100%;
+    height: auto;
+    background-color: coral;
+    text-align: center;
+}
+
+@media only screen and (max-width: 360px) {
+    nav {
+        padding: 0px;
+    }
+    .logo img {
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .logo ul {
+        display: flex;
+    }
+    .logo ul li {
+        line-height: 5vh;
+    }
+    .right{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        margin: 1rem;
+    }
+    .right input[type="text"] {
+        border: 1px solid black;
+        width: 50%;
+        height: 1.5rem;
+        border-radius: 0.3rem;
+        font-size: 10%;
+        margin-left: 2.5rem;
+    }
+    .right .btn {
+        padding: 0.4rem;
+        border: 1px solid black;
+        border-radius: 0.7rem;
+        font-size: 0.5rem;
+    }
+    hr {
+        width: 90%;
+        margin: auto;
+    }
+    .heading {
+        width: 70%;
+        /* margin: auto; */
+        /* padding-bottom: 50px; */
+    }
+    .heading .contentRight img {
+        display: none;
+    }
+    .blogpostSection {
+        /* padding: 1%; */
+        /* margin: 10px auto;    */
+        width: 80%;
+        height: auto;
+        background-color: #FBF7F7;
+    }
+    .post {
+        display: flex;
+        flex-direction: column;
+    }
+    .postImage img {
+        width: 80%;
+        height: 40%;
+    }
+}
